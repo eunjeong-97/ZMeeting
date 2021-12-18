@@ -1,0 +1,47 @@
+/*-----Grid-----*/
+$breakpoint-min-desktop: 1200px;
+$breakpoint-max-tablet: 1199px;
+$breakpoint-min-tablet: 576px;
+$breakpoint-max-mobile: 575px;
+
+@mixin desktop {
+  @media (min-width: $breakpoint-min-desktop) {
+    grid-column: 12;
+    gap: 24px;
+    margin: auto;
+    @content;
+    //size:
+  }
+}
+
+@mixin tablet {
+  @media (min-width:#{$breakpoint-min-tablet}) and (max-width: #{$breakpoint-max-tablet}) {
+    grid-column: 6;
+    column-gap: 24px;
+    margin: 24px;
+    @content;
+    //size:
+  }
+}
+
+@mixin mobile {
+  @media (max-width:#{$breakpoint-max-mobile}) {
+    grid-column: 4;
+    column-gap: 16px;
+    margin: 24px;
+    @content;
+    //size:
+  }
+}
+
+// ---color----
+$zmeeting-purple1: #be9cf8;
+$zmeeting-purple2: #9160e3;
+$zmeeting-purple3: #8d50f3;
+$zmeeting-purple4: #883cff;
+
+$zmeeting-blue1: #7b68ee;
+$zmeeting-blue2: #6614ef;
+
+$zeeting-pink: #ff00ff;
+$zeeting-gray: #a2a2a2;

@@ -1,7 +1,6 @@
 {
   "name": "zmeeting-front",
   "homepage": "https://eunjeong-97.github.io/ZMeeting/",
-  "basename": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

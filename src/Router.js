@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Routers, Routes, Route } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
 import Login from './pages/Login'
@@ -19,7 +19,7 @@ const Router = () => {
 
   console.log(isHiddenNavbar)
   return (
-    <BrowserRouter>
+    <Routers>
       {!isHiddenNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Main />} />
@@ -43,7 +43,7 @@ const Router = () => {
           render={() => <Error isNavbarHidden={changeHiddenNavbar(true)} />}
         />
       </Routes>
-    </BrowserRouter>
+    </Routers>
   )
 }
 

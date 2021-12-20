@@ -1,6 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import Router from './Router'
+import { BrowserRouter as Routers } from 'react-router-dom'
 
-ReactDOM.render(<Router />, document.getElementById('root'))
+import Router from './Router'
+import './index.css'
+
+ReactDOM.render(
+  <Routers>
+    <Router />
+  </Routers>,
+  document.getElementById('root')
+)

@@ -6,9 +6,10 @@
 
 ## 기술스택
 
+| 이후에 TypeScript기반 React로 업데이트 예정
+
 - JavaScript
 - React
 - Redux
 - D3.js
 - webRTC
-- 이후에 TypeScript로 업데이트 예정

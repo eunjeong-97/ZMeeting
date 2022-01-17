@@ -12,6 +12,7 @@ const SignupInput = props => {
     onChange,
     isValid,
     value,
+    required,
   } = signupItem
 
   return (
@@ -28,6 +29,7 @@ const SignupInput = props => {
           maxLength={maxLength}
           onChange={onChange}
           value={value}
+          required={required}
         />
       </div>
       {!isValid && <p className="contents_error">{errorMessage}</p>}
@@ -40,6 +42,7 @@ SignupInput.defaultProps = {
   minLength: '2',
   maxLength: '10',
   value: '',
+  required: false,
 }
 
 export default SignupInput
